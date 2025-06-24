@@ -1,0 +1,253 @@
+/* .label{
+    color : red
+}
+.button{
+    color:rgb(2, 11, 2);
+}
+.login-background {
+  background-image: url('../images/bird.jpg'); /* Replace with your image */
+  /* background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */ */
+
+/* .login-container {
+  background-color: rgba(216, 208, 214, 0.897);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center; */
+/* }
+
+
+.login-container input,
+.login-container label,
+.login-container button
+{
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+} */
+
+/* .login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top:10px
+}
+
+.login-container button:hover {
+  background-color: #2980b9;
+} */
+/* Login.css */
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  position: relative;
+}
+
+.title-underline {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  margin: 0.5rem auto;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px 15px 15px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+  outline: none;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.floating-label {
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  color: #777;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.input-group input:focus + .floating-label,
+.input-group input:not(:placeholder-shown) + .floating-label {
+  top: -10px;
+  left: 35px;
+  font-size: 12px;
+  background: white;
+  padding: 0 5px;
+  color: #4facfe;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.social-btn.google {
+  background: #fff;
+  color: #db4437;
+}
+
+.social-btn.facebook {
+  background: #fff;
+  color: #4267B2;
+}
+
+.social-btn.twitter {
+  background: #fff;
+  color: #1DA1F2;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #777;
+}
+
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #777;
+}
+
+.register-link a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #ff4757;
+  font-size: 14px;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.error-input {
+  border-color: #ff4757 !important;
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
